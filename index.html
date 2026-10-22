@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080810">
+<title>For Noor ✨</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="dots" id="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+<main>
+  <section class="stage active" data-stage="0">
+    <h1 class="big">Hey, Noor. 👀</h1>
+    <p class="sub">Someone has a little surprise for you.</p>
+    <button class="btn next">Let's see →</button>
+  </section>
+
+  <section class="stage" data-stage="1">
+    <div class="cake-wrap">
+      <button id="cake" class="cake" aria-label="Tap the cake to blow out the candles">
+        <span class="candles"><i><b></b></i><i><b></b></i><i><b></b></i></span>
+        <span class="tier t1"></span><span class="tier t2"></span><span class="plate"></span>
+      </button>
+    </div>
+    <h2 class="big">HAPPY 23rd BIRTHDAY, NOOR! 🎂</h2>
+    <p class="sub" id="cakeMsg">23 already? Okayyy, look at you. 😂✨<br>Tap the cake. Make a wish.</p>
+    <button class="btn next" id="cakeNext" hidden>Keep going →</button>
+  </section>
+
+  <section class="stage" data-stage="2">
+    <p class="quote">Funny how one game of Free Fire can put someone unexpected in your life. 🎮</p>
+    <p class="sub">Anyway. Back to you.</p>
+    <button class="btn next">Okay →</button>
+  </section>
+
+  <section class="stage" data-stage="3">
+    <p class="sub top">Okay, one small question… 👀</p>
+    <button id="gift" class="gift" aria-label="Open the gift box">
+      <span class="lid"></span><span class="box"></span>
+      <span class="card" id="giftCard"><span id="g1"></span><span id="g2"></span><span id="g3"></span></span>
+    </button>
+    <p class="hint" id="giftHint">Tap the gift</p>
+    <button class="btn next" id="giftNext" hidden>One last thing →</button>
+  </section>
+
+  <section class="stage" data-stage="4">
+    <h2 class="name">Noor Malik ✨</h2>
+    <div class="msg">
+      <p><strong>Happy Birthday, Noor! ❤️</strong></p>
+      <p>May Allah bless you with happiness, success, good health, peace, and countless reasons to smile.</p>
+      <p>Enjoy your day, keep being your wonderful self, and make this year a good one.</p>
+      <p class="sign">– Your favourite Free Fire teammate 😌</p>
+    </div>
+    <button class="btn" id="party">Celebrate 🎉</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
